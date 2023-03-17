@@ -333,8 +333,7 @@ dependencies = [
 [[package]]
 name = "authifier"
 version = "1.0.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a84411393a4326726ead660991ce8047f1865fa89900fb6c18e1e6c513cf1f9b"
+source = "git+https://github.com/somods/authifier#fbf27d8582d8367e513ada72252445cf959a6c5f"
 dependencies = [
  "async-std",
  "async-trait",
@@ -359,6 +358,7 @@ dependencies = [
  "schemars",
  "serde",
  "serde_json",
+ "sms",
  "totp-lite",
  "ulid 0.5.0",
  "validator 0.15.0",
@@ -3012,8 +3012,7 @@ dependencies = [
 [[package]]
 name = "rocket_authifier"
 version = "1.0.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4554a81937341d8c3cd3e43431ac2d23624444dc3a88e7ffd3ff66593779293"
+source = "git+https://github.com/somods/authifier#fbf27d8582d8367e513ada72252445cf959a6c5f"
 dependencies = [
  "authifier",
  "iso8601-timestamp",
@@ -3535,6 +3534,20 @@ name = "smallvec"
 version = "1.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83"
+
+[[package]]
+name = "sms"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f4d0ac7944f57e7d7afdb86d6467df51de76e7249dee6bb34e86d9225c5a8c72"
+dependencies = [
+ "base64 0.13.0",
+ "chrono",
+ "rand 0.8.5",
+ "reqwest",
+ "ring",
+ "urlencoding",
+]
 
 [[package]]
 name = "socket2"
@@ -4225,6 +4238,12 @@ dependencies = [
  "percent-encoding",
  "serde",
 ]
+
+[[package]]
+name = "urlencoding"
+version = "2.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e8db7427f936968176eaa7cdf81b7f98b980b18495ec28f1b5791ac3bfe3eea9"
 
 [[package]]
 name = "utf-8"
