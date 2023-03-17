@@ -1,5 +1,5 @@
 # Build Stage
-FROM rustlang/rust:slim AS builder
+FROM rust:slim AS builder
 USER 0:0
 WORKDIR /home/rust/src
 
