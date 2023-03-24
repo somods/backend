@@ -333,7 +333,7 @@ dependencies = [
 [[package]]
 name = "authifier"
 version = "1.0.7"
-source = "git+https://github.com/somods/authifier#fbf27d8582d8367e513ada72252445cf959a6c5f"
+source = "git+https://github.com/somods/authifier?rev=80153950cb5b4b3cfbd7d428e4dc8cd7dd847205#80153950cb5b4b3cfbd7d428e4dc8cd7dd847205"
 dependencies = [
  "async-std",
  "async-trait",
@@ -3012,7 +3012,7 @@ dependencies = [
 [[package]]
 name = "rocket_authifier"
 version = "1.0.7"
-source = "git+https://github.com/somods/authifier#fbf27d8582d8367e513ada72252445cf959a6c5f"
+source = "git+https://github.com/somods/authifier?rev=80153950cb5b4b3cfbd7d428e4dc8cd7dd847205#80153950cb5b4b3cfbd7d428e4dc8cd7dd847205"
 dependencies = [
  "authifier",
  "iso8601-timestamp",
