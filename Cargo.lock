@@ -331,40 +331,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "authifier"
-version = "1.0.7"
-source = "git+https://github.com/somods/authifier?rev=3440e96118ec518d9729574b61cb7b3b9f9ff39a#3440e96118ec518d9729574b61cb7b3b9f9ff39a"
-dependencies = [
- "async-std",
- "async-trait",
- "base32",
- "bson",
- "chrono",
- "futures",
- "handlebars",
- "iso8601-timestamp",
- "lazy_static",
- "lettre",
- "log",
- "mongodb",
- "nanoid",
- "rand 0.8.5",
- "regex",
- "reqwest",
- "revolt_okapi",
- "revolt_rocket_okapi",
- "rocket",
- "rust-argon2",
- "schemars",
- "serde",
- "serde_json",
- "sms",
- "totp-lite",
- "ulid 0.5.0",
- "validator 0.15.0",
-]
-
-[[package]]
 name = "autocfg"
 version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2997,7 +2963,7 @@ dependencies = [
  "async-recursion",
  "async-std",
  "async-trait",
- "authifier 1.0.7 (git+https://github.com/somods/authifier?rev=3440e96118ec518d9729574b61cb7b3b9f9ff39a)",
+ "authifier",
  "base64 0.13.1",
  "bincode",
  "bitfield",
@@ -3158,7 +3124,7 @@ name = "rocket_authifier"
 version = "1.0.7"
 source = "git+https://github.com/somods/authifier?rev=1c628e86fd16f596154c149d927ea6a9d3424bcf#1c628e86fd16f596154c149d927ea6a9d3424bcf"
 dependencies = [
- "authifier 1.0.7 (git+https://github.com/somods/authifier?rev=1c628e86fd16f596154c149d927ea6a9d3424bcf)",
+ "authifier",
  "iso8601-timestamp",
  "revolt_okapi",
  "revolt_rocket_okapi",
@@ -3688,20 +3654,6 @@ name = "smallvec"
 version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
-
-[[package]]
-name = "sms"
-version = "0.1.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f4d0ac7944f57e7d7afdb86d6467df51de76e7249dee6bb34e86d9225c5a8c72"
-dependencies = [
- "base64 0.13.1",
- "chrono",
- "rand 0.8.5",
- "reqwest",
- "ring",
- "urlencoding",
-]
 
 [[package]]
 name = "socket2"
@@ -4436,12 +4388,6 @@ dependencies = [
  "percent-encoding",
  "serde",
 ]
-
-[[package]]
-name = "urlencoding"
-version = "2.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e8db7427f936968176eaa7cdf81b7f98b980b18495ec28f1b5791ac3bfe3eea9"
 
 [[package]]
 name = "utf-8"
